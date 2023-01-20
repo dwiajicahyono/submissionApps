@@ -74,10 +74,10 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
+
+
     private fun showSelectedHero(hero: Prov) {
-        val intent = Intent(this, DetailActivity::class.java)
-       intent.putExtra(INTENT_PARCELABLE, it )
-        startActivity(intent)
+        Toast.makeText(this, "Kamu memilih " + hero.name, Toast.LENGTH_SHORT).show()
 
 
     }
